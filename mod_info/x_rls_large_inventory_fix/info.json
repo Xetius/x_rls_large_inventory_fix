@@ -1,0 +1,8 @@
+{
+  "title": "RLS Large Inventory Fix",
+  "tag_line": "Lets RLS careers load once the part inventory passes about 8,700 parts",
+  "version_string": "0.0.1",
+  "username": "Xetius",
+  "tagid": "x_rls_large_inventory_fix",
+  "message": "RLS Career Overhaul keeps the part inventory as one block of Lua text. Past about 8,700 parts the block exceeds a LuaJIT limit (65536 constants), so the save can be written but not read back, and the career stops with \"Career failed to load\". This mod reads an oversized block in pieces. It changes nothing else, and does not edit save files."
+}
